@@ -1,0 +1,28 @@
+{% extends 'women/base.html' %}
+
+{% load static %}
+<link type="text/css" href="{% static 'women/css/login.css' %}" rel="stylesheet" />
+
+{% block content %}
+<h1>{{title}}</h1>
+
+<form method="post">
+    {% csrf_token %}
+
+
+    {% if form.errors %}
+        <div class="form-error">
+            Неверное имя или пароль!
+        </div>
+    {% endif %}
+
+    {% for f in form %}
+        <p><label class="form-label" for="{{ f.id_for_label }}">{{f.label}}: </label>{{ f }}</p>
+    {% endfor %}
+
+    <button type="submit">Войти</button>
+</form>
+
+{% endblock %}
+
+

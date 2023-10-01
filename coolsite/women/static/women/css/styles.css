@@ -1,0 +1,42 @@
+/* women/css/styles.css */
+
+body {
+    background-color: #f0f0f0; /* Цвет фона */
+    font-family: Arial, sans-serif; /* Устанавливаем шрифт */
+}
+
+.list-articles {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.article-panel {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin: 10px;
+    width: calc(33.33% - 20px);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.thumb {
+    max-width: 100%;
+    height: auto;
+}
+
+h2 {
+    margin-top: 10px;
+    color: #333; /* Цвет заголовков */
+}
+
+.link-read-post a {
+    color: #007bff; /* Цвет ссылки */
+    text-decoration: none;
+}
+
+.link-read-post a:hover {
+    text-decoration: underline; /* Подчеркиваем ссылку при наведении */
+}
